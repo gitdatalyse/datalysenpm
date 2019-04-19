@@ -1,12 +1,12 @@
 {
-	"name": "spanacomnpm",
+	"name": "datalysenpm",
 	"version": "0.0.1",
 	"description": "...",
 	"main": "main.js",
 	"author": {
-		"name": "spanacom ltd"
+		"name": "datalyse group ltd"
 	},
-	"keywords": [ "spanacomnpm"],
+	"keywords": [ "datalysenpm"],
 	"engines": {
 		"node": "*"
 	},
