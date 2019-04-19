@@ -5,7 +5,7 @@ this.Spanacom = function(apikey) {
     
   var https = require('https'),
   OPTS = {
-    host: 'api.spanads.com',
+    host: 'app.datalyse.io',
     port: 443,
     prefix: '/api/1.0/',
     method: 'POST',
