@@ -1,7 +1,7 @@
 (function() {
 "use strict";
 
-this.Spanacom = function(apikey) {
+this.Datalyse = function() {
     
   var https = require('https'),
   OPTS = {
@@ -11,12 +11,11 @@ this.Spanacom = function(apikey) {
     method: 'POST',
     rejectUnauthorized: false,
     headers: {
-      'Content-Type': 'application/json',
-      'User-Agent': 'Mandrill-Node/1.0.41'
+      'Content-Type': 'application/x-www-form-urlencoded',
+     'User-Agent': 'DatalyseNPM-Node/1.0.41'
     }
   },
   req;
-  this.apikey=apikey;
   this.debug=false;
   this.onerror = function(error){
   console.log('DEFAULT ONERROR:',error);
@@ -25,10 +24,9 @@ this.Spanacom = function(apikey) {
     this.api= function(method,params,onresult,onerror) {
         
     
-      params.apikey = this.apikey;
       params = new Buffer(JSON.stringify(params), 'utf8');
       if (this.debug) {
-        console.log("Spanacom: Opening request to https://" + OPTS.host + OPTS.prefix + uri + ".json");
+        console.log("Datalyse: Opening request to https://" + OPTS.host + OPTS.prefix + method + ".json");
       }
       OPTS.path = "" + OPTS.prefix + method + ".json";
       OPTS.headers['Content-Length'] = params.length;

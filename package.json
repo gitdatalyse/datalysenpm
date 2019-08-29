@@ -1,14 +1,25 @@
 {
-	"name": "datalysenpm",
-	"version": "0.0.1",
-	"description": "...",
-	"main": "main.js",
-	"author": {
-		"name": "datalyse group ltd"
-	},
-	"keywords": [ "datalysenpm"],
-	"engines": {
-		"node": "*"
-	},
-	"readmeFilename": "README.md"
+  "name": "datalysenpm",
+  "version": "0.0.6",
+  "description": "...",
+  "main": "main.js",
+  "author": "datalyse group ltd",
+  "keywords": [
+    "datalysenpm"
+  ],
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitdatalyse/datalysenpm.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitdatalyse/datalysenpm/issues"
+  },
+  "homepage": "https://github.com/gitdatalyse/datalysenpm#readme"
 }
