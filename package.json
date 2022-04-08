@@ -1,6 +1,6 @@
 {
   "name": "datalysenpm",
-  "version": "0.0.6",
+  "version": "2.0.0",
   "description": "...",
   "main": "main.js",
   "author": "datalyse group ltd",
@@ -17,6 +17,10 @@
     "type": "git",
     "url": "git+https://github.com/gitdatalyse/datalysenpm.git"
   },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "https": "^1.0.0"
+  }
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gitdatalyse/datalysenpm/issues"
