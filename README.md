@@ -3,6 +3,5 @@ To install this module type in the ssh console to the directory where you instal
 
 npm install datalysenpm
 
-----------------------
 
-More information in www.datalyse.io/en/developers/
+More information in https://datalyse.io/en/developers_restapi/#nodejs/leads
