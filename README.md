@@ -1,4 +1,4 @@
-# dataysenpm
+# datalysenpm
 To install this module type in the ssh console to the directory where you installed NodeJS:
 
 npm install datalysenpm
@@ -10,7 +10,7 @@ var datalyse = new datalysenpm.Datalyse("YOUR_TOKEN_HERE");
 
     datalyse.api('sendsms/smsmt', {
     "to": "34666222333",
-    "from": "Spanacom",
+    "from": "Datalyse",
     "text": "hi world",
 }, function (result) {
         console.log('Success', result);
