@@ -3,8 +3,8 @@
 
   this.Datalyse = function(token) {
 
-    let axiosSpanacom = require('axios'),
-        httpsSpanacom = require('https');
+    let axiosDatalyse = require('axios'),
+        httpsDatalyse = require('https');
 
     this.token=token;
     this.debug=false;
@@ -17,11 +17,11 @@
 
       params.token = this.token;
       if (this.debug) {
-        console.log("Spanacom: Opening request to https://app.datalyse.io/api/1.0/" +method + ".json");
+        console.log("Datalyse: Opening request to https://app.datalyse.io/api/1.0/" +method + ".json");
       }
-      let agent = new httpsSpanacom.Agent({ family: 4 });
+      let agent = new httpsDatalyse.Agent({ family: 4 });
 
-      axiosSpanacom.get("https://app.datalyse.io/api/1.0/" +method + ".json/", { data: params, httpsAgent: agent })
+      axiosDatalyse.get("https://app.datalyse.io/api/1.0/" +method + ".json", { data: params, httpsAgent: agent })
           .then(response => {
             return onresult(response.data);
           }).catch(error => {
