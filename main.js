@@ -3,8 +3,7 @@
 
   this.Datalyse = function(token) {
 
-    let axiosDatalyse = require('axios'),
-        httpsDatalyse = require('https');
+    let axiosDatalyse = require('axios');
 
     this.token=token;
     this.debug=false;
@@ -19,9 +18,8 @@
       if (this.debug) {
         console.log("Datalyse: Opening request to https://app.datalyse.io/api/1.0/" +method + ".json");
       }
-      let agent = new httpsDatalyse.Agent({ family: 4 });
 
-      axiosDatalyse.get("https://app.datalyse.io/api/1.0/" +method + ".json", { data: params, httpsAgent: agent })
+      axiosDatalyse.post("https://app.datalyse.io/api/1.0/" +method + ".json", params)
           .then(response => {
             return onresult(response.data);
           }).catch(error => {
