@@ -3,10 +3,13 @@ To install this module type in the ssh console to the directory where you instal
 
 npm install datalysenpm
 
+You can view the account's api_token from Account Settings at https://app.datalyse.io/profile
+
+  
 Example for use:
 ```sh
 var datalysenpm = require("datalysenpm"); 
-var datalyse = new datalysenpm.Datalyse("YOUR_TOKEN_HERE");
+var datalyse = new datalysenpm.Datalyse("YOUR_API_TOKEN_HERE");
 
     datalyse.api('sendsms/smsmt', {
     "to": "34666222333",
